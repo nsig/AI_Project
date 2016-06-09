@@ -14,40 +14,31 @@ import lenz.htw.ai4g.ai.DriverAction;
 import lenz.htw.ai4g.ai.Info;
 import lenz.htw.ai4g.track.Track;
 
-public class StaticCar extends AI {
-public StaticCar(Info info) {
+public class StaticCar extends AI 
+{
+	public StaticCar(Info info) 
+	{
 		super(info);
 		// TODO Auto-generated constructor stub
 	}
 
-/*
- * Projekt von Nils Sigmund (s0542645) und Florian Wollenzien (s0542646)
- */
-
-
-
-	public String getName() {
-		return "s0542645";
+	public String getName() 
+	{
+		return "Static Car";
 	}
 
-	public DriverAction update(boolean reset) {	
-
-
-	return new DriverAction(0, 0);
-	
+	public DriverAction update(boolean reset) 
+	{	
+		return new DriverAction(0, 0);
 	}
-	
 
-	
-	public boolean isEnabledForRacing() {
+	public boolean isEnabledForRacing() 
+	{
 		return true;
 	}
-	
-	
+
 	public void doDebugStuff(){
 
 
-	}
-
-	
+	}	
 }
